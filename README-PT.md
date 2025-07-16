@@ -1,5 +1,9 @@
 # Análise de Incidente de Segurança: Ataque de Negação de Serviço (SYN Flood)
 
+<div align="right">
+<a href="./README.md">Read in English 🇺🇸</a>
+</div>
+
 *Estudo de caso prático desenvolvido durante o <a href="https://www.coursera.org/google-certificates/cybersecurity-certificate">Certificado Profissional de Cibersegurança do Google</a>, focado na análise de logs de rede para identificação e resposta a ameaças.*
 
 ---
