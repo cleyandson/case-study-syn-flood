@@ -20,6 +20,8 @@ As a security analyst, I was tasked with investigating the cause of a service di
 
 The objective of this project was to use packet analysis techniques to diagnose the issue, document the findings in a technical report, and propose a mitigation plan.
 
+---
+
 ### Analysis and Incident Report
 
 The investigation of the network logs revealed that the server was under a **Denial of Service (DoS) attack, specifically a SYN Flood**. The initial packet analysis in Wireshark already indicated a suspicious communication pattern, as seen in the evidence below.
@@ -30,6 +32,8 @@ Further analysis confirmed that a single malicious IP address (`203.0.113.0`) wa
 
 This tactic exhausted the server's resources, rendering it unable to respond to legitimate user connections. The key evidence confirming the attack included `Connection Timeout` errors and `TCP [RST, ACK]` packets sent to valid clients.
 
+---
+
 ### Mitigation and Recommendation Plan
 
 Based on the analysis, an action plan was structured to contain the threat and enhance the infrastructure's resilience:
@@ -38,8 +42,12 @@ Based on the analysis, an action plan was structured to contain the threat and e
 **Mitigation 1:** Enable **SYN Cookies** on the server's operating system to validate connections before allocating resources.
 **Mitigation 2:** Implement **Rate Limiting** policies to limit the number of new connections per second from a single IP address.
 
+---
+
 ### Full Report in PDF
 * [**Cybersecurity Incident Report**](https://github.com/cleyandson/case-study-syn-flood/blob/2dc1f7343f7beb00c6b281634c6a081930fc81cd/Documents/Cybersecurity%20incident%20report.pdf)
+
+---
 
 ### Conclusion
 
