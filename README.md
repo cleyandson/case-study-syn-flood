@@ -1,5 +1,9 @@
 # Security Incident Analysis: Denial of Service (SYN Flood) Attack
 
+<div align="right">
+<a href="./README-PT.md">Ver em Português 🇧🇷</a>
+</div>
+
 *A practical case study developed during the <a href="https://www.coursera.org/google-certificates/cybersecurity-certificate">Google Cybersecurity Professional Certificate</a>, focused on network log analysis for threat identification and response.*
 
 ---
